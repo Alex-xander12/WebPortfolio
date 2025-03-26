@@ -372,6 +372,25 @@
         .quiz img.zoomed, .post-test-container img.zoomed {
             transform: scale(1.2); /* Slightly zoom in */
         }
+        /* Scanned Document Button */
+.scanned-doc {
+    margin-top: 20px;
+}
+
+.scanned-doc button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.scanned-doc button:hover {
+    background: #218838;
+}
 
         /* Footer Styling */
         footer {
