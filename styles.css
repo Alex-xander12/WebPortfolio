@@ -1,4 +1,4 @@
-/* General Styles */
+    /* General Styles */
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -372,14 +372,13 @@
         .quiz img.zoomed, .post-test-container img.zoomed {
             transform: scale(1.2); /* Slightly zoom in */
         }
-       /* Scanned Document Button */
+        /* Scanned Document Button */
 .scanned-doc {
-    margin-top: 30px; /* Moves the button lower */
-    text-align: center;
+    margin-top: 20px;
 }
 
 .scanned-doc button {
-    background: #800080; /* Violet color */
+    background: #28a745;
     color: white;
     border: none;
     padding: 12px 18px;
@@ -390,9 +389,8 @@
 }
 
 .scanned-doc button:hover {
-    background: #a32cc4; /* Lighter violet on hover */
+    background: #218838;
 }
-
 
         /* Footer Styling */
         footer {
