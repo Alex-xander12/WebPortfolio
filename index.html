@@ -99,7 +99,7 @@
 </section>
 
   <!-- Quiz & Post Test Section -->
-  <section id="quiz-section">
+<section id="quiz-section">
     <h2>Quiz & Post Tests</h2>
     <div class="quiz-container">
         <!-- Quiz -->
@@ -112,18 +112,20 @@
             <img id="post-test-img" src="post test1.jpg" alt="Post Test 1" onclick="openModal(this)">
             <p id="post-test-label">Post Test 1</p>
             <div class="post-test-buttons">
-                <button onclick="prevTest()">Prev</button>
-                <button onclick="nextTest()">Next</button>
+                <button class="nav-btn" onclick="prevTest()">Prev</button>
+                <button class="nav-btn" onclick="nextTest()">Next</button>
             </div>
-            
         </div>
-        <div class="scanned-doc">
-    <a href="https://drive.google.com/file/d/1pI8jndU4XqpW1a8lVBdG56vgozmhZtkH/view?usp=drive_link" target="_blank">
-        <button>Scanned Document</button>
-    </a>
     </div>
+
+    <!-- Scanned Document Button -->
+    <div class="scanned-doc">
+        <a href="https://drive.google.com/file/d/1pI8jndU4XqpW1a8lVBdG56vgozmhZtkH/view?usp=drive_link" target="_blank">
+            <button class="nav-btn">Scanned Document</button>
+        </a>
     </div>
 </section>
+
 
 
     <!-- Footer -->
