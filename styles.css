@@ -373,6 +373,27 @@
             transform: scale(1.2); /* Slightly zoom in */
         }
         /* Scanned Document Button */
+    .nav-btn {
+    background: #a32cc4; /* Matches the 'Next' and 'Prev' button */
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+    .nav-btn:hover {
+    background: #8a2be2; /* Lighter shade on hover */
+}
+
+/* Center the Scanned Document Button */
+.scanned-doc {
+    text-align: center;
+    margin-top: 20px;
+}
+
 .scanned-doc {
     margin-top: 20px;
 }
