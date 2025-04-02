@@ -6,6 +6,7 @@ body {
     background: #0f0f0f;
     color: #ddd;
     scroll-behavior: smooth;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 /* Navbar */
@@ -91,7 +92,8 @@ nav {
     background: linear-gradient(-45deg, #1a1a1a, #4b0082, #8a2be2, #000);
     background-size: 400% 400%;
     animation: gradientBG 10s ease infinite;
-    overflow: hidden;
+    text-align: center;
+    padding: 0 20px;
 }
 
 /* Home Content */
@@ -103,6 +105,7 @@ nav {
     margin: 0 auto;
     flex-wrap: wrap;
     text-align: center;
+    justify-content: center;
 }
 
 /* Anime GIF */
@@ -127,11 +130,11 @@ nav {
     }
 
     .anime-gif img {
-        width: 180px;
+        width: 150px;
     }
 
     .home-content h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .home-content p {
@@ -156,7 +159,7 @@ nav {
 }
 
 #about img {
-    width: 250px;
+    width: 200px;
     height: auto;
     border-radius: 50%;
 }
@@ -188,6 +191,7 @@ footer {
     font-size: 14px;
 }
 
+/* Footer Responsive */
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -197,7 +201,6 @@ footer {
     text-align: center;
 }
 
-/* Responsive Footer */
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
