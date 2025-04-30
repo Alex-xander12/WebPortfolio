@@ -38,7 +38,7 @@
         <div class="container">
             <h2>About Me</h2>
             <div class="about-container" id="aboutContainer">
-                <img src="profile.jpg" alt="My Photo">
+                <img src="profile.jpg" alt="My Photo" onclick="showDetails()">
                 <div class="about-content" id="aboutContent">
                     <h3>Hello! I'm Alexander Del Castillo</h3>
                     <p>My name is Alexander Del Castillo , and I’m a third-year Bachelor of Science in Information Technology student at Cavite State University (CvSU) Silang Campus. I have a strong interest in full-stack development and work with technologies such as HTML, CSS, JavaScript, and PHP. I’m also familiar with programming languages like Python, Java, C#, and C++, which allows me to explore different aspects of software development. Additionally, I have a basic understanding of networking concepts that complement my technical skills. I’m always eager to learn and improve, staying open to new technologies and opportunities to grow as a developer.</p>
@@ -179,6 +179,13 @@
 
     <!-- JavaScript for About Me Animation & Carousel -->
     <script>
+        let isClicked = false;
+
+        function showDetails() {
+            const aboutContainer = document.getElementById('aboutContainer');
+            isClicked = !isClicked;
+            aboutContainer.classList.toggle('clicked', isClicked);
+        }
 
         document.querySelectorAll(".quiz img, .post-test-container img").forEach(img => {
     img.addEventListener("click", function() {
