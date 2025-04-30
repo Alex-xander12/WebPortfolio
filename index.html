@@ -11,14 +11,18 @@
 <body>
 
     <!-- Navigation Bar -->
-    <nav>
+   <nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="nav-links">
         <a href="#home">Home</a>
         <a href="#about">About Me</a>
         <a href="#services">Services</a>
         <a href="#projects">Projects</a>
-        <a href="#quiz-section">quiz and post tests</a>
+        <a href="#quiz-section">Quiz and Post Tests</a>
         <a href="#midterm-exam">Midterms Exam</a>
-    </nav>
+    </div>
+</nav>
+
 
     <!-- Header (Home) Section -->
     <header id="home">
@@ -175,6 +179,13 @@
 
     <!-- JavaScript for About Me Animation & Carousel -->
     <script>
+
+    <script>
+    function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('active');
+    }
+</script>
+
         let isClicked = false;
 
         function showDetails() {
