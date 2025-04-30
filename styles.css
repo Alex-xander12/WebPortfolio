@@ -12,69 +12,38 @@
             padding: 0;
         }
 
-       /* Base styles (Desktop First) */
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #222;
-    padding: 10px 0;
-    position: relative;
-}
+        /* Navbar */
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid #8a2be2;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: background 0.3s ease;
+        }
+        nav a {
+            float: left;
+            color: #8a2be2;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out;
+        }
+        nav a:hover {
+            background: #8a2be2;
+            color: #fff;
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
 
-.hamburger {
-    display: none; /* Hidden on desktop */
-}
-
-.nav-links {
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-}
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-    nav {
-        justify-content: flex-start;
-        padding: 5px 0;
-    }
-
-    .hamburger {
-        display: block; /* Show hamburger on mobile */
-        font-size: 28px;
-        cursor: pointer;
-        margin-left: 20px;
-        color: white;
-    }
-
-    .nav-links {
-        display: none; /* Hidden by default on mobile */
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        z-index: 99;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links a {
-        display: block;
-        border-top: 1px solid #444;
-        padding: 12px;
-        font-size: 16px;
-    }
-}
-
+        /* Section Style */
+        section {
+            padding: 60px 20px;
+            margin-top: 60px;
+        }
 
         /* Home Section */
         #home {
@@ -378,6 +347,7 @@ nav {
             display: flex;
             justify-content: space-between;
         }
+
         .post-test-buttons button {
             background: #8a2be2;
             color: white;
@@ -531,6 +501,20 @@ nav {
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            nav {
+                padding: 5px 0;
+                text-align: center;
+            }
+        
+            nav a {
+                float: none;
+                display: inline-block;
+                padding: 10px 12px;
+                font-size: 14px;
+            }
+            section {
+                padding-top: 100px; /* Make sure content isn't hidden behind the navbar */
+            }
         
         }
         
@@ -669,3 +653,4 @@ nav {
                 text-align: center;
             }
         }
+
