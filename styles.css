@@ -12,39 +12,48 @@
             padding: 0;
         }
 
-        /* Navbar */
-        /* Responsive Design */
+       /* Base styles (Desktop First) */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    padding: 10px 0;
+    position: relative;
+}
+
+.hamburger {
+    display: none; /* Hidden on desktop */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+/* Mobile Styles */
 @media (max-width: 768px) {
     nav {
+        justify-content: flex-start;
         padding: 5px 0;
-        text-align: center;
-        position: relative;
     }
 
-    nav a {
-        float: none;
-        display: inline-block;
-        padding: 10px 12px;
-        font-size: 14px;
-    }
-
-    section {
-        padding-top: 100px; /* Make sure content isn't hidden behind the navbar */
-    }
-
-    /* Hamburger Styles */
     .hamburger {
-        display: block;
-        font-size: 24px;
+        display: block; /* Show hamburger on mobile */
+        font-size: 28px;
         cursor: pointer;
-        position: absolute;
-        left: 20px;
-        top: 10px;
+        margin-left: 20px;
         color: white;
     }
 
     .nav-links {
-        display: none;
+        display: none; /* Hidden by default on mobile */
         flex-direction: column;
         background-color: #333;
         position: absolute;
@@ -60,9 +69,9 @@
 
     .nav-links a {
         display: block;
-        padding: 10px;
         border-top: 1px solid #444;
-        color: white;
+        padding: 12px;
+        font-size: 16px;
     }
 }
 
